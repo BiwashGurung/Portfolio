@@ -139,6 +139,9 @@ emailIcon.addEventListener('animationend', () => {
 
 
 
+// Footer year
+document.querySelector("footer .footer-year").textContent =
+	new Date().getFullYear();
 
 
 
