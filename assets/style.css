@@ -700,9 +700,10 @@ section{
 
 .portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 0.1fr));
-    gap: 1rem;
-  }
+    grid-template-columns: repeat(auto-fill, minmax(300px, 0.3fr));
+    gap: 5rem;
+    position: relative; /* Add this to make the container relative */
+}
   
 .portfolio-gallery > * {
     aspect-ratio: 1/1;
@@ -748,32 +749,13 @@ section{
     opacity: 0;
     background: linear-gradient(rgba(0,0,0,.2), #12f7ff);
     display: flex;
-    flex-direction: column; /* Place content and link in a column */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     text-align: center;
     transition: 0.5s;
     padding: 0 2rem;
 }
-
-.port-link {
-    margin-top: 1rem; /* Adjust the spacing between content and link */
-    background: #fff;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 1px solid var(--hover-color);
-    outline: 2px solid #fff;
-}
-
-.port-link i {
-    font-size: 1.3rem;
-    color: var(--second-bg-color);
-}
-
 
 .port-box:hover .port-content{
     opacity: 1;
@@ -795,22 +777,7 @@ section{
     margin: 5px 0 15 0;
 }
 
-.port-content a{
-    background: #fff;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 1px solid var(--hover-color);
-    outline: 2px solid#fff;
-}
 
-.port-content a i{
-    font-size: 1.3rem;
-    color: var(--second-bg-color);
-}
 
 
 
