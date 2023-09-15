@@ -700,10 +700,10 @@ section{
 
 .portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax values */
     gap: 5rem;
-  }
-  
+}
+
 .portfolio-gallery > * {
     aspect-ratio: 1/1;
   }
